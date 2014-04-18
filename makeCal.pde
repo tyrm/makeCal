@@ -1,17 +1,28 @@
+import java.util.*;
 
+calObj myCal = new calObj(5);
 
 void setup() {
   size(800,600);
   background(0);
+  
+  
 }
 
-class makeCal {
-  int x, y, w, h;
-  
-  makeCal (int tempX, int tempY, int tempW, int tempH) {  
-    x = tempX;
-    y = tempY;
-    w = tempW;
-    h = tempH;
-  } 
+void draw() {
+
 }
+
+class calObj {
+  int spacer;
+  
+  calObj (int tempS) {  
+    spacer = tempS;
+  }
+  
+  void drawCal(int x, int y, int w, int h) {
+    int boxW = (w-(spacer*6))/7;
+    
+  }
+}
+
